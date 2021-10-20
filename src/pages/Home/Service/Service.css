@@ -1,0 +1,9 @@
+.btn-style{
+    border-radius: 15px;
+    background-color: #8A2BE2;
+    
+}
+.btn-style a{
+    color: white;
+    text-decoration: none;
+}

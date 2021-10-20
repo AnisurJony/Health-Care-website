@@ -1,0 +1,32 @@
+.nav-item{
+    text-decoration: none;
+}
+.nav-container{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+ 
+    /* height: 110px;
+    width: 100% */
+    
+    
+}
+
+.manu{
+ padding: 50px;
+}
+
+
+div img {
+    color: burlywood;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 18px 50px;
+    border-radius: 20px;
+}
+.login-btn{
+    border-radius: 15px;
+    background-color: goldenrod;
+}

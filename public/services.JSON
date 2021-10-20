@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "key": "B002RL8IYK",
+        "name": "Cardio Monitoring",
+        "img": "https://i.ibb.co/p3QWKXG/medical-services-6.jpg",
+        "description": "What does cardiac monitoring do? A cardiac event monitor is a device that you control to record the electrical activity of your heart (ECG)."
+    },
+    {
+        "id": 2,
+        "key": "B002RL8IXY",
+        "name": "Orthodontics",
+        "img": "https://i.ibb.co/wR7YHyw/medical-services-5.jpg",
+        "description": "Orthodontics is a branch of dentistry that treats malocclusion, a condition in which the teeth are not correctly positioned when the mouth ."
+    },
+    {
+        "id": 3,
+        "key": "B002RL8IGJ",
+        "name": "Traumatology",
+        "img": "https://i.ibb.co/RDDK7hP/medical-services-10.jpg",
+        "description": "Traumatology: The branch of surgery that deals with injured patients, usually on an emergency basis. Patients who have suffered significant."
+    },
+    {
+        "id": 4,
+        "key": "B002RL8ITF",
+        "name": "Cardiology",
+        "img": "https://i.ibb.co/p3QWKXG/medical-services-6.jpg",
+        "description": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease."
+    },
+    {
+        "id": 5,
+        "key": "B002RL8IPO",
+        "name": "Prostheses",
+        "img": "https://i.ibb.co/QMQf0Rb/medical-services-11.jpg",
+        "description": "A prosthesis substitutes for a part of the body that may have been missing at birth, or that is lost in an accident or through amputation.."
+    },
+    {
+        "id": 6,
+        "key": "B002RL8IHU",
+        "name": "Pulmonary",
+        "img": "https://i.ibb.co/R0m8xhY/medical-services-1.png",
+        "description": "The word pulmonary means pertaining to the lungs. It is derived from the Latin root word pulmo, which means lung. If someone has pulmonary."
+    }
+]

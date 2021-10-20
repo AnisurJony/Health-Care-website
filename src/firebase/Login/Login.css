@@ -1,0 +1,38 @@
+.login-form{
+    border: 2px solid purple;
+    padding: 20px;
+    width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    background-color:#7544a3;
+    color: snow;
+    border-radius: 35px;
+}
+p a{
+    text-decoration: none;
+    color: #8A2BE2;
+    background-color: white;
+    padding: 4px;
+    border-radius: 10px;
+}
+.submit-btn{
+    border-radius: 15px;
+    border: none;
+    width: 100px;
+    background-color: goldenrod;
+
+}
+.google-btn{
+    border-radius: 15px;
+    border: none;
+    background-color: goldenrod;
+}
+.input-style{
+    border-radius: 10px;
+    border: none;
+    width: 300px;
+}
+
+.header{
+    color: rgb(219, 230, 122);
+}

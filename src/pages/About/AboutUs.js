@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../../images/about/about-img.jpg'
+import FooterComp from '../FooterComp/FooterComp';
 const AboutUs = () => {
     return (
         <>
@@ -25,6 +26,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
+            <FooterComp></FooterComp>
         </>
     );
 };

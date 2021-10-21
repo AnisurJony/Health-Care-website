@@ -32,13 +32,13 @@
         "key": "B002RL8IPO",
         "name": "Prostheses",
         "img": "https://i.ibb.co/QMQf0Rb/medical-services-11.jpg",
-        "description": "A prosthesis substitutes for a part of the body that may have been missing at birth, or that is lost in an accident or through amputation.."
+        "description": "A prosthesis substitutes for a part of the body that may have been missing at birth, or that is lost in an accident or through amputation disease."
     },
     {
         "id": 6,
         "key": "B002RL8IHU",
         "name": "Pulmonary",
         "img": "https://i.ibb.co/R0m8xhY/medical-services-1.png",
-        "description": "The word pulmonary means pertaining to the lungs. It is derived from the Latin root word pulmo, which means lung. If someone has pulmonary."
+        "description": "The word pulmonary means pertaining to the lungs. It is derived from the Latin root word pulmo, which means lung. If someone has pulmonary disease."
     }
 ]

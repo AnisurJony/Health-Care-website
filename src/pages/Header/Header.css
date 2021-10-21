@@ -1,14 +1,15 @@
 .nav-item{
     text-decoration: none;
+
 }
 .nav-container{
     background-color: blueviolet;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100px;
  
-    /* height: 110px;
-    width: 100% */
-    
+
     
 }
 
@@ -29,4 +30,32 @@ div img {
 .login-btn{
     border-radius: 15px;
     background-color: goldenrod;
+}
+.nav-item{
+    font-size: 18px;
+    font-weight: 400;
+}
+.logout{
+    background-color: goldenrod;
+    border-radius: 15px;
+    border: none;
+}
+.login{
+    background-color: goldenrod;
+    border-radius: 15px;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.nav-item:hover{
+    background-color: goldenrod;
+    
+    border: none;
+}
+
+.company-name{
+    font-size: 40px;
+    margin-left: 10px;
+    
 }

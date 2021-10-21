@@ -2,6 +2,7 @@ import React from 'react';
 import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth/useAuth';
+import FooterComp from '../../pages/FooterComp/FooterComp';
 import './Login.css'
 const Login = () => {
 
@@ -18,12 +19,10 @@ const Login = () => {
                 console.log(result.user)
                 history.push(redirect_uri)
             })
-        // .catch(error => {
-        //     setError(error.message)
-        // })
+
     }
     return (
-        <div>
+        <div className="login-page">
 
             <div className="login-form">
                 <div>
@@ -51,6 +50,8 @@ const Login = () => {
                         onClick={handleGooleLogin} >Google Sign In</button>
                 </div>
             </div>
+            <FooterComp></FooterComp>
+
         </div>
     );
 };

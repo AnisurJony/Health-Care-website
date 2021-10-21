@@ -1,0 +1,16 @@
+.inquiry-form{
+  border: 2px solid #0DCAF0;
+  width: 30%;
+  margin: auto;
+  padding-bottom: 40px;
+  margin-top: 80px;
+  border-radius: 15px;
+}
+
+.inquiry-btn{
+    background-color:#0DCAF0 ;
+    border: none;
+    border-radius: 15px;
+    color: white;
+padding: 4px 12px;
+}

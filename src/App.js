@@ -57,6 +57,9 @@ function App() {
             <PrivateRoute path="/booknow">
               <BookNow></BookNow>
             </PrivateRoute>
+            <PrivateRoute path="/servicedetails">
+              <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
 
             <Route path="/servicedetails/:serviceId">
               <ServiceDetails></ServiceDetails>

@@ -1,26 +1,72 @@
-import React from 'react';
-import { useHistory, useLocation } from 'react-router';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useHistory, useLocation } from 'react-router-dom';
+
 import useAuth from '../../Hooks/useAuth/useAuth';
 import FooterComp from '../../pages/FooterComp/FooterComp';
 import './Login.css'
 const Login = () => {
 
 
-    const { signInUsingGoogle } = useAuth();
+    const { signInUsingGoogle, setIsLoading, loginWithEmailAndPassword, setUser } = useAuth();
+
+
+
     const location = useLocation();
     const history = useHistory();
-    const redirect_uri = location.state?.from || '/services';
 
+    const redirect_uri = location.state?.from || '/home';
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+
+    const handleEmail = e => {
+        setEmail(e.target.value);
+    }
+
+
+    const handlePassword = e => {
+        setPassword(e.target.value);
+    }
+
+
+    const handleLoginWithEmailAndPassword = e => {
+
+
+        loginWithEmailAndPassword(email, password)
+
+            .then(result => {
+
+                setIsLoading(true)
+                setUser(result.user);
+                history.push(redirect_uri)
+
+            })
+
+            .finally(() => {
+                setIsLoading(false)
+            })
+
+        e.preventDefault();
+    };
 
     const handleGooleLogin = () => {
         signInUsingGoogle()
             .then(result => {
-                console.log(result.user)
+
+                setIsLoading(true);
+                setUser(result.user);
                 history.push(redirect_uri)
             })
 
-    }
+            .finally(() => {
+                setIsLoading(false)
+            })
+
+    };
+
+
+
     return (
         <div className="login-page">
 
@@ -29,15 +75,15 @@ const Login = () => {
                     <h2 className="header">Login</h2>
                     <br />
 
-                    <form >
-                        <input type="email" className="input-style" name="" placeholder="Your Email" />
+                    <form onSubmit={handleLoginWithEmailAndPassword}>
+                        <input type="email" className="input-style" onBlur={handleEmail} name="" placeholder="Your Email" />
                         <br />
                         <br />
 
-                        <input type="password" className="input-style" name="" placeholder="password" />
+                        <input type="password" className="input-style" onBlur={handlePassword} name="" placeholder="password" />
                         <br />
                         <br />
-                        <input type="submit" className="google-btn" name="" value="submit" />
+                        <input type="submit" className="google-btn" value="Login" />
 
                     </form>
                     <br />
@@ -54,6 +100,7 @@ const Login = () => {
 
         </div>
     );
+
 };
 
 export default Login;

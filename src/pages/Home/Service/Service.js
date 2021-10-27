@@ -4,7 +4,8 @@ import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Service.css'
 const Service = ({ service }) => {
-    const { name, description, img, id } = service
+    const { name, description, img, id } = service;
+
     return (
         <div className="col">
 

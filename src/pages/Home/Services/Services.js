@@ -8,6 +8,7 @@ const Services = () => {
 
     const [services, setServices] = useServices();
 
+
     return (
         <>
             <div className="container service-style">
@@ -21,7 +22,6 @@ const Services = () => {
                         key={service.key}
 
                         service={service}
-
                     ></Service>)}
 
                 </div>
@@ -31,6 +31,7 @@ const Services = () => {
             <FooterComp></FooterComp>
         </>
     );
+
 };
 
 export default Services;

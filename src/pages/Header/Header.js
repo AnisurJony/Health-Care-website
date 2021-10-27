@@ -5,6 +5,7 @@ import './Header.css'
 import useAuth from '../../Hooks/useAuth/useAuth';
 const Header = () => {
     const { user, logOut } = useAuth();
+    console.log('new', user.displayName)
     return (
         <div className="nav-container">
 
@@ -18,6 +19,7 @@ const Header = () => {
                 <NavLink className="me-2 nav-item rounded text-white py-1 px-3 nav-item" to="/home">Home</NavLink>
                 <NavLink className="me-2 nav-item rounded text-white py-1 px-3 nav-item" to="/about">About Us</NavLink>
                 <NavLink className="me-2 nav-item rounded text-white py-1 px-3 nav-item" to="/services">Services</NavLink>
+                <NavLink className="me-2 nav-item rounded text-white py-1 px-3 nav-item" to="/booknow">Book Now</NavLink>
                 <NavLink className="me-2 nav-item rounded text-white py-1 px-3 nav-item" to="/sentinquiry">Send Inquiry</NavLink>
 
 

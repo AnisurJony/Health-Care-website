@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "authentication-with-email-pass",
+    "staging": "dream-care-hospital"
+  },
+  "targets": {}
+}

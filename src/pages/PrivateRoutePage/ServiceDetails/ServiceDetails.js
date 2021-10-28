@@ -27,13 +27,13 @@ const ServiceDetails = () => {
 
     useEffect(() => {
 
-        const service = services.find(ser => ser.id = serviceId);
+        const service = services.find(service => service.id = serviceId);
         setSelectedService(service);
     }, [serviceId, services])
 
     return (
         <div className="container">
-            <h2 className="my-5"><span className="text-info">Service</span> Details {serviceId}</h2>
+            <h2 className="my-5">About <span className="text-info">{selectedService?.name}</span></h2>
 
             <div>
                 <Image src={selectedService?.img} fluid />

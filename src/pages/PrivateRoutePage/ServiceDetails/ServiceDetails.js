@@ -41,6 +41,7 @@ const ServiceDetails = () => {
             <div className="my-4">
                 <p>{selectedService?.description}</p>
             </div>
+            <h2>Blogs are comming soon....</h2>
         </div>
     );
 };

@@ -42,13 +42,13 @@ const useFirebase = () => {
     }
 
     const updateName = (name) => {
-        console.log('new anme', name)
+        // console.log('new anme', name)
         updateProfile(auth.currentUser, {
             displayName: name
         }).then(() => {
             const newUser = { ...user, displayName: name }
             setUser(newUser)
-            console.log('newuser', newUser)
+            // console.log('newuser', newUser)
         })
 
     }
@@ -58,10 +58,12 @@ const useFirebase = () => {
 
 
     const logOut = () => {
+        setIsLoading(true)
         signOut(auth)
             .then(() => {
                 setUser({});
             })
+            .finally(() => setIsLoading(false))
     }
 
 

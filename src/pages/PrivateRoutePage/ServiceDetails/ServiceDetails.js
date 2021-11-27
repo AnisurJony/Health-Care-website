@@ -4,7 +4,6 @@ import { Image } from 'react-bootstrap';
 import { useParams } from 'react-router';
 
 
-// import banner1 from '../../../images/serviceCategory/blog-1.png'
 
 
 const ServiceDetails = () => {

@@ -4,16 +4,16 @@ const Footer = () => {
     return (
         <>
 
-            <div className=" footer-style">
-                <div className="d-flex justify-content-around ">
-                    <div>
+            <div className="container">
+                <div className=" row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                    <div className='col'>
                         <h2>Dream Care</h2>
                         <p>dreamcare@hospital.com</p>
                         <p>+88001704568952</p>
                         <p>bannani,dhaka</p>
 
                     </div>
-                    <div>
+                    <div className='col'>
                         <h3>Talk to us</h3>
                         <hr />
                         <p>About us</p>
@@ -21,7 +21,7 @@ const Footer = () => {
                         <p>Blog</p>
                         <p>Contract</p>
                     </div>
-                    <div>
+                    <div className='col'>
                         <h3>Support</h3>
                         <hr />
                         <p>Documantation</p>
@@ -29,7 +29,7 @@ const Footer = () => {
                         <p>Conditions</p>
 
                     </div>
-                    <div>
+                    <div className='col'>
                         <h3>Newsletter</h3>
                         <hr />
                         <h5>Get our offers & News in your inbox</h5>
